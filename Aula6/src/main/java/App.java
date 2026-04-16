@@ -1,7 +1,19 @@
 import model.Produto;
 
-public class TesteJSON {
+import java.io.IOException;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
+
+public class App {
     public static void main(String[] args) {
-        Produto produto
+
+        try {
+            APIServer.run();
+
+        }catch (IOException e){
+            System.out.println("Erro ao rodar servidor:" + e.getMessage());
+        }
+
     }
 }
