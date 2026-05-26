@@ -43,5 +43,7 @@ public class ProdutoRepository {
                 produtos.add(p);
             }
         }
+
+        return produtos;
     }
 }
